@@ -205,7 +205,7 @@ section.booking-menu {
   width: 420px;
   height: 450px;
   background: transparent;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
   border: 2px solid #1d2b3a;
   color: #00dfc4;
   padding: 30px 40px;
