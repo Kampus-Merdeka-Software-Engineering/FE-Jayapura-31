@@ -44,6 +44,11 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
+  --first-color: #4D7298;
+  --second-color: #D0EFB1;
+  --third-color: #3063C2;
+  --fourth-color: #204EA5;
+  --base-color: #fff;
 }
 
 .header {
@@ -56,7 +61,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 9%;
-  background: #4D7298;
+  background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,6 +73,7 @@ html {
   font-size: 2.5rem;
   display: block;
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -92,11 +98,11 @@ html {
 }
 
 .navbar a:nth-child(3) {
-  color: #007BFF;
+  color: var(--second-color);
 }
 
 .navbar a:hover {
-  color: #007BFF;
+  color: var(--second-color)
 }
 
 
@@ -111,7 +117,8 @@ html {
 }
 
 .book-button a:hover {
-  background-color: #0056b3;
+  border-color: var(--base-color);
+  color: var(--base-color);
 }
 
 .main {
@@ -127,7 +134,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 800px; 
+  max-width: 800px;
   margin-bottom: 10rem;
 }
 
@@ -136,6 +143,7 @@ html {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -147,6 +155,7 @@ html {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -188,7 +197,16 @@ html {
   animation: fadeInLeft 1s ease-in-out;
 }
 
+.sosmed-main a {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem;
+  animation: fadeInLeft 1s ease-in-out;
+}
 
+.sosmed-main a:hover {
+  color: var(--second-color);
+}
 
 .footer {
   position: fixed;
@@ -196,7 +214,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #4D7298;
+  background-color: var(--first-color);
   padding: 2rem;
   width: 100%;
   height: 20rem;
@@ -212,9 +230,8 @@ html {
   ;
 }
 
-.logo-container-footer h1{
+.logo-container-footer h1 {
   font-family: Inter;
-  color: black;
   width: 20rem;
   margin: 0;
   font-size: 1.3rem;
@@ -250,9 +267,9 @@ html {
 }
 
 .footer-menu-container {
-display: flex;
-margin: auto;
-gap: 20rem;
+  display: flex;
+  margin: auto;
+  gap: 20rem;
 }
 
 .footer-menu li:first-child {
@@ -263,15 +280,16 @@ gap: 20rem;
 
 .footer-menu a {
   text-decoration: none;
-  color: black ;
+  color: var(--second-color);
   transition: color 0.2s ease-out;
 }
 
 .footer-menu a:hover {
-  color: #007BFF;
+  color: var(--second-color);
 }
 
 .footer-description {
   flex: 1;
   margin: 1rem;
+  color: var(--base-color);
 }
