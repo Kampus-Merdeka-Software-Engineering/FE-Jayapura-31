@@ -71,6 +71,10 @@ html {
   transition: color 0.2s ease-out;
 }
 
+.navbar a:first-child {
+  color: #007BFF;
+}
+
 .navbar a:hover {
   color: #007BFF;
 }

@@ -91,6 +91,10 @@ html {
   transition: color 0.2s ease-out;
 }
 
+.navbar a:nth-child(3) {
+  color: #007BFF;
+}
+
 .navbar a:hover {
   color: #007BFF;
 }
