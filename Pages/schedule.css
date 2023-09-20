@@ -278,13 +278,13 @@ html {
 
 
 
-.footer-menu a {
+.footer-menu-container a {
   text-decoration: none;
-  color: var(--second-color);
+  color: var(--base-color);
   transition: color 0.2s ease-out;
 }
 
-.footer-menu a:hover {
+.footer-menu-container a:hover {
   color: var(--second-color);
 }
 

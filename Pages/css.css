@@ -72,7 +72,13 @@ html {
   margin-right: 20px;
   text-transform: capitalize;
   text-decoration: none;
-  color: var(--base-color);
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
   transition: color 0.2s ease-out;
 }
 
@@ -288,9 +294,9 @@ section.testimoni {
   align-items: center;
 }
 
-.logo-web {
+.LOGO-WEB {
   font-size: 2.5rem;
-  margin-right: 20px;
+  margin: 0px 5rem;
 }
 
 .footer-menu {
@@ -304,6 +310,8 @@ section.testimoni {
 }
 
 .footer-menu a {
+  font-size: 1.5rem;
+  font-weight: 400;
   text-decoration: none;
   color: var(--base-color);
   transition: color 0.2s ease-out;
