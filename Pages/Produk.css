@@ -63,6 +63,7 @@ html {
   padding: 2rem 9%;
   background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
 }
 
 .logo-container {
@@ -122,80 +123,67 @@ html {
 }
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #DBE7FF;
+  background-color: #ffffff;
   padding: 2rem;
-  height: 100vh;
+  height: 100vh; 
+  margin-top: 10%;
+  margin-bottom: 15%;
 }
 
-.main-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-  margin-bottom: 10rem;
+.produk {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
+
+.produk1 {
+    background-color: #3063C2;
+}
+
+.produk2 {
+    background-color: white;
+}
+
+.produk1,
+.produk2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25rem;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    top: 192px;
+    left: 182px;
+    border-radius: 28px;
+    box-shadow: 0px 4px 50px 0px #00000040;
+}
+
+.appointment-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+    font-size: 1.4rem;
+    max-width: 200px;
+    text-decoration: none;
   }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  
+  .appointment-button a {
+    color: white;
   }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+  
+  .appointment-button:hover {
+    background-color: #0050a5;
   }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.text-container {
-  flex: 2;
-  text-align: center;
-  animation: fadeInRight 1s ease-in-out;
-}
-
-.big-text {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-
-.small-paragraph {
-  font-size: 16px;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.text-container h1 {
-  font-size: 14px;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: left;
-  font-style: italic;
-}
-
-
-.content-image {
-  flex: 1;
-  margin-right: 20px;
-  animation: fadeInLeft 1s ease-in-out;
-}
 
 .sosmed-main a {
   font-size: 1.2rem;
