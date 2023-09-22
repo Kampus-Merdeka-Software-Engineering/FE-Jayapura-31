@@ -98,7 +98,7 @@ html {
   transition: color 0.2s ease-out;
 }
 
-.navbar a:nth-child(3) {
+.navbar a:nth-child(2) {
   color: var(--second-color);
 }
 
