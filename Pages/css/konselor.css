@@ -122,8 +122,8 @@ html {
 }
 
 .main {
-  margin-top: 10rem;
-  margin-bottom: 22rem;
+  margin-top: 6rem;
+  margin-bottom: 17rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,27 +132,58 @@ html {
   height: 100vh;
   flex-direction: column;
   gap: 2.5625rem;
+  margin-right: 13%;
+  flex-direction: column;
 }
 
 .main-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 25rem;
     text-align: center;
-    width: 400px;
-    height: 400px;
     top: 192px;
     left: 182px;
-    border-radius: 28px;
+    border-radius: 10px;
     box-shadow: 0px 4px 50px 0px #00000040;
     width: 880px;
-    height: 160px;
     top: 159px;
     left: 280px;
+    flex-shrink: 0;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    
+}
+.text-container {
+  flex: 3;
+
 }
 
+.big-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.small-paragraph {
+  font-size: 16px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.text-container h1 {
+  font-size: 14px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  font-style: italic;
+}
+
+
+.content-image {
+  flex: 1;
+  width: 123px;
+}
 
 .footer {
   position: fixed;
