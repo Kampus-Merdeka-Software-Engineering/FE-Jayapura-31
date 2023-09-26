@@ -1,0 +1,328 @@
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s ease-out;
+  text-decoration: none;
+}
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.desktop {
+  background-color: var(--base-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.desktop .div {
+  background-color: var(--base-color);
+  overflow: hidden;
+  width: 1440px;
+  height: 4527px;
+  position: relative;
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  --first-color: #4D7298;
+  --second-color: #D0EFB1;
+  --third-color: #3063C2;
+  --fourth-color: #204EA5;
+  --base-color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+  background: var(--first-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-web {
+  font-size: 2.5rem;
+}
+
+.navbar a {
+  margin-right: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  transition: color 0.2s ease-out;
+}
+
+.navbar a:first-child {
+  color: var(--second-color);
+}
+
+.navbar a:hover {
+  color: var(--second-color)
+}
+
+
+.book-button a {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--second-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid var(--second-color);
+  transition: background-color 0.2s ease-out;
+}
+
+.book-button a:hover {
+  border-color: var(--base-color);
+  color: var(--base-color);
+}
+
+.wellcome-text {
+  display: flex;
+  margin-top: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/image/Background-image.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.wellcome-text-box {
+  position: relative;
+  color: #f5f5f5;
+  padding: 30px 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0% 0%;
+
+}
+
+.wellcome-text h2 {
+  font-weight: 400;
+}
+
+.wellcome-text h1 {
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.appointment-button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+  font-size: 1.4rem;
+  max-width: 200px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.appointment-button a {
+  color: white;
+}
+
+.appointment-button:hover {
+  background-color: #0050a5;
+}
+
+.about-us {
+  display: flex;
+  margin-top: 0;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+  background-image: url(/image/background-image-2.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us h1 {
+  font: size 10px;
+  color: #007BFF;
+}
+
+.about-us h2 {
+  font-size: x-large;
+  color: white;
+}
+
+.about-us p {
+  color: white;
+}
+
+.welcome-to-talkspace {
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sosmed-main a {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+.sosmed-main a:hover {
+  color: var(--second-color);
+}
+
+section.testimoni {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimoni-page {
+  background-image: url(/image/background-image-3.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimoni-page h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+.testimoni-page h3 {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 63px;
+  overflow: hidden;
+}
+
+.card-article {
+  width: 300px;
+  border-radius: 1.25rem;
+  background: linear-gradient(145deg, #93ddff, #7bbad8);
+  box-shadow: 8px 8px 21px #6091a8, -8px -8px 21px #b2ffff;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 2rem;
+  margin: 2rem;
+  display: block;
+}
+
+.card-data {
+  background-color: var(--card-container);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.card-name {
+  font-weight: 500;
+  font-size: 2em;
+  text-align: left;
+}
+
+.card-data p {
+  font-size: 1.5em;
+  text-align: justify;
+  font-weight: 400;
+}
+
+/* .card-image {
+  position: relative;
+  padding-top: 1.5rem;
+  margin-top: -.75rem;
+} */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--first-color);
+  padding: 2rem;
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LOGO-WEB {
+  font-size: 2.5rem;
+  margin: 0px 5rem;
+}
+
+.footer-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-menu li {
+  margin-right: 20px;
+}
+
+.footer-menu a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--base-color);
+  transition: color 0.2s ease-out;
+}
+
+.footer-menu a:hover {
+  color: var(--second-color);
+}
+
+.footer-description {
+  flex: 1;
+  margin: 1rem;
+  color: var(--base-color);
+}
