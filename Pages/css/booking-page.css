@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-transform: capitalize;
   transition: all .2s ease-out;
   text-decoration: none;
 }
@@ -54,7 +53,6 @@ html {
 
 .navbar a {
   margin-right: 20px;
-  text-transform: capitalize;
   text-decoration: none;
   color: white;
   font-family: Inter;
@@ -191,18 +189,13 @@ select {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   display: flex;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: var(--first-color);
   padding: 2rem;
-  width: 100%;
+  width: 100vw;
   height: 20rem;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -228,7 +221,6 @@ select {
 
 .logo-web {
   font-size: 2.5rem;
-  margin-right: 20px;
 }
 
 
@@ -250,15 +242,28 @@ select {
 
 .footer-menu-container {
   display: flex;
-  margin: auto;
-  gap: 20rem;
+  margin:auto ;
+  gap: 2rem;
 }
 
 .footer-menu li:first-child {
   font-weight: bold;
 }
 
+.sosmed-footer{
+margin-right: 7rem;
+}
 
+.sosmed-footer a {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.sosmed-footer a:hover {
+  color: var(--second-color);
+}
 
 .footer-menu-container a {
   text-decoration: none;
@@ -271,7 +276,8 @@ select {
 }
 
 .footer-description {
-  flex: 1;
-  margin: 1rem;
+  margin-left: 3rem;
   color: var(--base-color);
+  width: 25rem;
+  font-size: 1.3rem;
 }
