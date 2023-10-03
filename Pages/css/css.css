@@ -243,6 +243,8 @@ html {
   margin: 10px 0px 40px 0px;
   padding: 20px;
   outline: double 10px #ffffff;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .welcome-to-talkspace {
@@ -277,6 +279,7 @@ section.testimoni {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .testimoni-page h1 {
@@ -320,14 +323,14 @@ section.testimoni {
 }
 
 .card-name {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 1000;
   font-size: 3em;
   text-align: left;
 }
 
 .card-data p {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.5em;
   text-align: justify;
   font-weight: 400;
