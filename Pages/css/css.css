@@ -9,37 +9,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   transition: all .2s ease-out;
   text-decoration: none;
 }
-
-.body {
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.desktop {
-  background-color: var(--base-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.desktop .div {
-  background-color: var(--base-color);
-  overflow: hidden;
-  width: 1440px;
-  height: 4527px;
-  position: relative;
-}
-
 
 html {
   font-size: 62.5%;
@@ -53,11 +25,10 @@ html {
   --base-color: #fff;
 }
 
+
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -66,6 +37,93 @@ html {
   background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2rem 5%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-links {
+    display: block; 
+  }
+
+  .menu-toggle {
+    display: none; 
+  }
+
+  .mobile-menu {
+    display: none; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none; 
+  }
+
+  .menu-toggle {
+    display: flex; 
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: flex; 
+  }
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: var(--first-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+}
+
+.menu-toggle {
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: transform 0.2s ease-out;
+}
+
+.mobile-menu.active {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--first-color);
+  width: 100%;
+  text-align: center;
+  z-index: 1001; 
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu li {
+  margin: 10px 0;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .logo-container {
@@ -89,16 +147,11 @@ html {
 
 .navbar-links {
   margin-right: auto;
-  display: block;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-}
-
-.navbar-links {
-  margin-right: auto;
 }
 
 .navbar a {
@@ -146,11 +199,21 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url(/image/Background-image.jpg);
-  height: 100vh;
   background-position: center;
   background-size: cover;
 }
-
+@media screen and (max-width: 768px) {
+  .wellcome-text { 
+    height: auto;
+    margin-top: 8rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wellcome-text { 
+    height: 100vh;
+  }
+}
 .wellcome-text-box {
   position: relative;
   color: #f5f5f5;
@@ -203,12 +266,21 @@ html {
   background-color: #fff;
   padding: 2rem;
   background-image: url(/image/background-image-2.jpg);
-  height: 100vh;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .about-us { 
+    min-height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us { 
+    height: 100vh;
+  }
 }
 
 .about-us-container {
@@ -275,13 +347,22 @@ section.testimoni {
 
 .testimoni-page {
   background-image: url(/image/background-image-3.jpg);
-  height: 100vh;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: 'PT Sans Narrow', sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .testimoni-page { 
+    min-height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimoni-page { 
+    height: 100vh;
+  }
 }
 
 .testimoni-page h1 {
@@ -313,6 +394,18 @@ section.testimoni {
   padding: 2rem;
   margin: 2rem;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .card-article { 
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-article { 
+    width: 300px;
+    margin: 2rem;
+  }
 }
 
 .card-data {
@@ -346,24 +439,48 @@ section.testimoni {
 
 .Produk {
   display: flex;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 }
-
+@media screen and (max-width: 768px) {
+  .Produk { 
+    min-height: auto;
+    overflow-x: auto; 
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Produk { 
+    height: 100vh;
+  }
+}
 .Produkbox {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30rem;
+
   height: 50rem;
   border-radius: 30px;
   background-color: #3063C2;
   filter: drop-shadow(10px 4px 30px rgba(0, 0, 0, 0.35));
   padding: 2rem; 
 }
-
+@media screen and (max-width: 768px) {
+  .Produkbox { 
+  display: inline-block; 
+  margin: 0 1rem;
+  width: 100%;
+  }
+  .Produkbox:first-child {
+    margin-left: 100rem; 
+  }
+}
+@media screen and (min-width: 768px) {
+  .Produkbox { 
+  display: flex;
+  width: 30rem;
+  }
+}
 
 .produk-content {
   display: flex;
@@ -424,13 +541,16 @@ section.testimoni {
   display: flex;
   background-color: var(--first-color);
   padding: 2rem;
-  width: 100vw;
   height: 20rem;
   z-index: 1000;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+@media screen and (min-width: 768px) {
+  .wellcome-text { 
+    width: 100vw;
+  }
+}
 .logo-container-footer {
   margin-left: 7rem;
 }
@@ -480,10 +600,11 @@ section.testimoni {
   font-weight: bold;
 }
 
-.sosmed-footer{
-margin-right: 7rem;
+@media screen and (min-width: 768px) {
+  .wellcome-text { 
+    margin-right: 7rem;
+  }
 }
-
 .sosmed-footer a {
   font-size: 2rem;
   color: #fff;
