@@ -25,28 +25,23 @@
       <form action="" method="post">
         <div class="text-field">
           <div class="input-box">
-            <label for="username">nama lengkap</label>
+            <label for="username">Nama lengkap</label>
             <input type="text" required="required" placeholder="nama lengkap" />
           </div>
           <div class="input-box">
-            <label for="email">email</label>
+            <label for="email">Email</label>
             <input type="email" required="required" placeholder="email" />
           </div>
           <div class="input-box">
-            <label for="tanggal-lahir">tanggal lahir</label>
+            <label for="phone">Umur</label>
+            <input type="number" required="required" placeholder="umur" />
+          </div>
+          <div class="input-box">
+            <label for="tanggal-konseling">Tanggal konseling</label>
             <input
               type="date"
               required="required"
               placeholder="tanggal lahir"
-            />
-          </div>
-          <div class="input-box">
-            <label for="phone">nomor whatsapp: format (1234-1234-1234)</label>
-            <input
-              type="tel"
-              required="required"
-              placeholder="nomor whatsapp"
-              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
             />
           </div>
           <div class="pilih-paket">
@@ -56,7 +51,9 @@
               id="paket-konseling"
               name="paket-konseling"
             >
-              <option value="--Pilih Layanan--" selected="selected">--Pilih Layanan--</option>
+              <option value="--Pilih Layanan--" selected="selected">
+                --Pilih Layanan--
+              </option>
               <option value="individual">Individual</option>
               <option value="family">Family</option>
               <option value="depression">Depression</option>
