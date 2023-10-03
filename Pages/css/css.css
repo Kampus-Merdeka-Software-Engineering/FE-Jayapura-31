@@ -167,11 +167,13 @@ html {
 }
 
 .wellcome-text h1 {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 20px;
 }
 
 .wellcome-text h3 {
+  margin-top: 10px;
+  font-size: 20px;
   font-weight: 400;
 }
 
