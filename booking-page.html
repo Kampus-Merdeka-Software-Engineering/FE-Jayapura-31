@@ -29,10 +29,6 @@
             <input type="text" required="required" placeholder="Nama Lengkap" />
           </div>
           <div class="input-box">
-            <label for="email">Email</label>
-            <input type="email" required="required" placeholder="Email" />
-          </div>
-          <div class="input-box">
             <label for="phone">Usia</label>
             <input type="number" required="required" placeholder="Usia" />
           </div>
@@ -62,6 +58,9 @@
           </div>
           <button type="submit" class="submit-btn">submit</button>
         </div>
+        <h2>
+          Counseling is available At 09.00 to 20.00 WIB
+        </h2>
       </form>
     </div>
     <footer class="footer">
@@ -103,5 +102,14 @@
         ></a>
       </div>
     </footer>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedOption = urlParams.get('selectedOption');
+    
+      if (selectedOption) {
+        const selectElement = document.getElementById('paket-konseling');
+        selectElement.value = selectedOption;
+      }
+    </script>
   </body>
 </html>

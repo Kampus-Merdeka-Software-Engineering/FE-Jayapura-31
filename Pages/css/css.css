@@ -395,6 +395,7 @@ section.testimoni {
 }
 
 .produk-features li {
+  font-size: 13px;
   margin-top: 5px;
   margin-bottom: 10px;
   position: relative;
@@ -432,7 +433,6 @@ section.testimoni {
 
 .logo-container-footer {
   margin-left: 7rem;
-  ;
 }
 
 .logo-container-footer h1 {
