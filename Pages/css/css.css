@@ -70,10 +70,25 @@ html {
 
 .logo-container {
   flex-grow: 1;
+  height: auto;
+}
+
+.logo-container {
+  flex-grow: 1;
 }
 
 .logo-web {
   font-size: 2.5rem;
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  margin-right: auto;
   display: block;
 }
 
@@ -351,16 +366,11 @@ section.testimoni {
 .footer {
   position: relative;
   display: flex;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: var(--first-color);
   padding: 2rem;
-  width: 100%;
+  width: 100vw;
   height: 20rem;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -386,7 +396,6 @@ section.testimoni {
 
 .logo-web {
   font-size: 2.5rem;
-  margin-right: 20px;
 }
 
 
@@ -408,16 +417,20 @@ section.testimoni {
 
 .footer-menu-container {
   display: flex;
-  margin: auto;
-  gap: 20rem;
+  margin:auto ;
+  gap: 2rem;
 }
 
 .footer-menu li:first-child {
   font-weight: bold;
 }
 
+.sosmed-footer{
+margin-right: 7rem;
+}
+
 .sosmed-footer a {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #fff;
   padding: 1rem;
   animation: fadeInLeft 1s ease-in-out;
@@ -438,7 +451,8 @@ section.testimoni {
 }
 
 .footer-description {
-  flex: 1;
-  margin: 1rem;
+  margin-left: 3rem;
   color: var(--base-color);
+  width: 25rem;
+  font-size: 1.3rem;
 }
