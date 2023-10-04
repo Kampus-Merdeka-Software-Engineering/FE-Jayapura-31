@@ -26,11 +26,21 @@
         <div class="text-field">
           <div class="input-box">
             <label for="username">Nama Lengkap</label>
-            <input type="text" required="required" placeholder="Nama Lengkap" />
+            <input
+              type="text"
+              required="required"
+              placeholder="Nama Lengkap"
+              pattern="[a-zA-Z ]+"
+            />
           </div>
           <div class="input-box">
             <label for="phone">Usia</label>
-            <input type="number" required="required" placeholder="Usia" />
+            <input
+              type="number"
+              required="required"
+              placeholder="Usia"
+              min="0"
+            />
           </div>
           <div class="input-box">
             <label for="tanggal-konseling">Tanggal Konseling</label>
@@ -47,7 +57,7 @@
               id="paket-konseling"
               name="paket-konseling"
             >
-              <option value="--Pilih Layanan--" selected="selected">
+              <option value="--Pilih Layanan--" selected="selected" disabled>
                 --Pilih Layanan--
               </option>
               <option value="individual">Individual</option>
@@ -58,9 +68,7 @@
           </div>
           <button type="submit" class="submit-btn">submit</button>
         </div>
-        <h2>
-          Counseling is available At 09.00 to 20.00 WIB
-        </h2>
+        <h2>Counseling is available At 09.00 to 20.00 WIB</h2>
       </form>
     </div>
     <footer class="footer">
@@ -69,22 +77,22 @@
           <img class="LOGO-WEB" alt="web logo" src="/image/LOGO WEB.png" />
         </a>
       </div>
-      <h1 class="footer-description">
-        Build a better website for your medical and healthcare business today.
-      </h1>
+
       <div class="footer-menu-container">
-  
         <div class="footer-menu">
-          <a href="">Company</a>
+          <a href="/index.html">Beranda</a>
         </div>
         <div class="footer-menu">
-          <a href="">Home</a>
+          <a href="/Produk.html">Produk</a>
         </div>
         <div class="footer-menu">
-          <a href="">Services</a>
+          <a href="/konselor.html">Konselor</a>
         </div>
         <div class="footer-menu">
-          <a href="">Contact</a>
+          <a href="#">Alur Konsultasi</a>
+        </div>
+        <div class="footer-menu">
+          <a href="/FAQ.html">FAQ</a>
         </div>
       </div>
       <div class="sosmed-footer">
@@ -104,10 +112,10 @@
     </footer>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const selectedOption = urlParams.get('selectedOption');
-    
+      const selectedOption = urlParams.get("selectedOption");
+
       if (selectedOption) {
-        const selectElement = document.getElementById('paket-konseling');
+        const selectElement = document.getElementById("paket-konseling");
         selectElement.value = selectedOption;
       }
     </script>

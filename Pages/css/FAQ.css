@@ -78,7 +78,7 @@ html {
   transition: color 0.2s ease-out;
 }
 
-.navbar a:nth-child(6) {
+.navbar a:nth-child(5) {
   color: var(--second-color);
 }
 
@@ -222,7 +222,7 @@ html {
 
 .footer-menu-container {
   display: flex;
-  margin:auto ;
+  margin: auto;
   gap: 2rem;
 }
 
@@ -230,8 +230,8 @@ html {
   font-weight: bold;
 }
 
-.sosmed-footer{
-margin-right: 7rem;
+.sosmed-footer {
+  margin-right: 7rem;
 }
 
 .sosmed-footer a {
