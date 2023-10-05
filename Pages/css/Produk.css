@@ -128,7 +128,7 @@ html {
   height: 100vh;
 }
 
-.produk {
+.layanan {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -210,7 +210,7 @@ html {
   background-color: var(--first-color);
   padding: 2rem;
   width: 100%;
-  height: 20rem;
+  height: 10rem;
   z-index: 1000;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

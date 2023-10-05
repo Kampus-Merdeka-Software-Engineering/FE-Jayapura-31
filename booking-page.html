@@ -13,8 +13,7 @@
       </a>
       <nav class="navbar">
         <a href="/index.html">Beranda</a>
-        <a href="/Produk.html">Produk</a>
-        <a href="/schedule.html">Jadwal</a>
+        <a href="/produk.html">layanan</a>
         <a href="/konselor.html">Konselor</a>
         <a href="#Alur Konsultasi">Alur Konsultasi</a>
         <a href="/FAQ.html">FAQ</a>
@@ -22,7 +21,7 @@
     </header>
     <div class="booking-menu-box">
       <h1>Pendaftaran Online Konseling</h1>
-      <form action="" method="post">
+      <form id="bookingForm" action="" method="post">
         <div class="text-field">
           <div class="input-box">
             <label for="username">Nama Lengkap</label>
@@ -34,7 +33,28 @@
             />
           </div>
           <div class="input-box">
-            <label for="phone">Usia</label>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              required="required"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="input-box">
+            <label for="phone">Nomor WhatsApp</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required="required"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="Nomor WhatsApp"
+            />
+          </div>
+          <div class="input-box">
+            <label for="Usia">Usia</label>
             <input
               type="number"
               required="required"
@@ -51,14 +71,14 @@
             />
           </div>
           <div class="pilih-paket">
-            <label for="paket-konseling">Pilih Layanan</label>
+            <label for="paket-konseling">Pilih layanan</label>
             <select
               title="paket-konseling"
               id="paket-konseling"
               name="paket-konseling"
             >
-              <option value="--Pilih Layanan--" selected="selected" disabled>
-                --Pilih Layanan--
+              <option value="--Pilih layanan--" selected="selected" disabled>
+                --Pilih layanan--
               </option>
               <option value="individual">Individual</option>
               <option value="family">Family</option>
@@ -83,7 +103,7 @@
           <a href="/index.html">Beranda</a>
         </div>
         <div class="footer-menu">
-          <a href="/Produk.html">Produk</a>
+          <a href="/produk.html">layanan</a>
         </div>
         <div class="footer-menu">
           <a href="/konselor.html">Konselor</a>
@@ -118,6 +138,17 @@
         const selectElement = document.getElementById("paket-konseling");
         selectElement.value = selectedOption;
       }
+      //alert box
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah formulir dikirim
+
+          // Menampilkan notifikasi menggunakan alert
+          alert(
+            "Data telah berhasil terkirim untuk lebih lanjut anda akan dihubungi melalui Email. Terima kasih telah mendaftar!"
+          );
+        });
     </script>
   </body>
 </html>
