@@ -162,6 +162,14 @@
             "Data telah berhasil terkirim untuk lebih lanjut anda akan dihubungi melalui Email. Terima kasih telah mendaftar!"
           );
         });
+
+        
+      const form = document.getElementById('bookingForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+      window.location.href = '/summary.html'
+      });
     </script>
   </body>
 </html>
