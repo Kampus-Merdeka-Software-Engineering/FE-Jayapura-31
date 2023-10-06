@@ -64,6 +64,7 @@ html {
   background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 @media screen and (max-width: 768px) {
   .header {
     padding: 2rem 5%;
@@ -149,7 +150,8 @@ html {
   color: white;
   text-decoration: none;
   font-size: 18px;
-} 
+}
+
 .logo-container {
   flex-grow: 1;
 }
@@ -218,7 +220,7 @@ html {
 }
 
 .card-container {
-  margin: 250px 0px 400px 0px;
+  margin: 350px 0px 350px 0px;
   display: flex;
   align-items: center;
   justify-content: center;

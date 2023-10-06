@@ -565,14 +565,14 @@ section.testimoni {
 .testimoni-form h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 42px;
-  color: var(--base-color);
+  color: black;
   text-align: center;
 }
 
 .testimoni-form h2 {
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
-  color: var(--base-color);
+  color: black;
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -583,11 +583,13 @@ section.testimoni {
   min-width: 400px;
   width: 700px;
   height: fit-content;
-  border: 3px solid var(--base-color);
+  border: 3px solid black;
   border-radius: 40px;
   padding: 30px 30px;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .input-box,
@@ -603,7 +605,7 @@ section.testimoni {
   padding: 10px;
   border: none;
   outline: none;
-  border: 4px solid var(--base-color);
+  border: 2px solid rgb(0, 0, 0);
   background: #ffffff;
   border-radius: 20px;
   font-size: 1em;
@@ -617,7 +619,7 @@ textarea {
 }
 
 label {
-  color: var(--base-color);
+  color: black;
   font-size: 12px;
 }
 
@@ -628,7 +630,7 @@ select {
   font-size: 1.15rem;
   padding: 0.675em 6em 0.675em 1em;
   background-color: #ffffff;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 20px;
   color: #000;
   cursor: pointer;
