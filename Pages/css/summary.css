@@ -2,7 +2,7 @@
 
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter','Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,6 +46,20 @@ html {
   background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.main h1 {
+  width: 100rem;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 400;
+
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-self: center;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     padding: 2rem 5%;
@@ -159,105 +173,8 @@ html {
   color: var(--second-color)
 }
 
-
-.booking-menu-box {
-  position: relative;
-  width: 500px;
-  background: transparent;
-  /* backdrop-filter: blur(15px); */
-  border: 2px solid var(--second-color);
-  border-radius: 40px;
-  padding: 30px 40px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 100px;
-}
-
-.booking-menu-box h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--second-color);
-  text-align: center;
-}
-
-.booking-menu-box h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--second-color);
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1.3rem;
-}
-
-.booking-menu-box .input-box {
-  width: 100%;
-  height: 50px;
-  margin: 30px 0;
-
-}
-
-.input-box input {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  border: none;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: #1d2b3a;
-  border-radius: 20px;
-  font-size: 1em;
-  transition: 0.5s;
-}
-
-input,
-select,
-textarea {
-  color: white;
-}
-
-label {
-  color: var(--second-color);
-}
-
-.input-box input:valid,
-.input-box input:focus {
-  border: 1px solid #ffffff;
-}
-
-.custom-select {
-  min-width: 350px;
-  position: relative;
-}
-
-select {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  font-size: 1.15rem;
-  padding: 0.675em 6em 0.675em 1em;
-  background-color: #1d2b3a;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
-  color: var(--second-color);
-  cursor: pointer;
-}
-
-.booking-menu-box .submit-btn {
-  width: 100%;
-  height: 45px;
-  background: var(--second-color);
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  cursor: pointer;
-  font-size: 16px;
-  color: #000;
-  font-weight: 600;
-  margin-top: 1rem;
-}
-
-.submit-btn:hover {
-  background-color: var(--base-color);
+.main {
+  
 }
 
 .footer {

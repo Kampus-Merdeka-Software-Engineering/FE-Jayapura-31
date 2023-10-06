@@ -22,7 +22,7 @@
         <nav class="navbar">
           <div class="navbar-links">
           <a href="/index.html">Beranda</a>
-          <a href="/Produk.html">layanan</a>
+          <a href="/Produk.html">Layanan</a>
           <a href="/konselor.html">Konselor</a>
           <a href="#Alur Konsultasi">Alur Konsultasi</a>
           <a href="/FAQ.html">FAQ</a>
@@ -37,7 +37,7 @@
           </div>
           <ul class="mobile-menu">
             <li><a href="/index.html">Beranda</a></li>
-            <li><a href="layanan.html">layanan</a></li>
+            <li><a href="/Produk.html">Layanan</a></li>
             <li><a href="/konselor.html">Konselor</a></li>
             <li><a href="#Alur Konsultasi">Alur Konsultasi</a></li>
             <li><a href="/FAQ.html">FAQ</a></li>
@@ -315,15 +315,12 @@
           const emailInput = document.getElementById("email");
           const userEmail = emailInput.value;
 
-          // Menggantilah dengan cara yang sesuai untuk memeriksa email di database
-          // Misalnya, dengan Ajax atau mengirim permintaan ke server Anda.
-
-          // Contoh sederhana: Daftar email yang terdaftar
+          
           const registeredEmails = ["user1@example.com", "user2@example.com", "user3@example.com"];
 
           if (registeredEmails.includes(userEmail)) {
               alert("Testimoni berhasil dikirim.");
-              // Kirim testimoni ke server Anda atau lakukan tindakan lainnya.
+              
           } else {
               alert("Alamat email tidak terdaftar. Anda tidak dapat mengirimkan testimoni.");
           }

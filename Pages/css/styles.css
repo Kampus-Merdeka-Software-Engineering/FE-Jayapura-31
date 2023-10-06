@@ -13,6 +13,15 @@
   text-decoration: none;
 }
 
+body {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #1d2b3a;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -29,6 +38,8 @@ html {
 .header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -36,8 +47,6 @@ html {
   padding: 2rem 9%;
   background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: auto;
-  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -127,24 +136,11 @@ html {
   font-size: 18px;
 }
 
-.logo-container {
-  flex-grow: 1;
-  height: auto;
-}
-
-.logo-container {
-  flex-grow: 1;
-}
-
 .logo-web {
   font-size: 2.5rem;
   display: block;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-}
 
 .navbar-links {
   margin-right: auto;
