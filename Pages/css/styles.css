@@ -49,44 +49,6 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 2rem 5%;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .navbar-links {
-    display: block;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
-  .mobile-menu.active {
-    display: flex;
-  }
-}
-
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -199,15 +161,7 @@ html {
   background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
-  .wellcome-text {
-    height: auto;
-    margin-top: 8rem;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 985px) {
   .wellcome-text {
     height: 100vh;
   }
@@ -272,13 +226,7 @@ html {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 768px) {
-  .about-us {
-    min-height: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 985px) {
   .about-us {
     height: 100vh;
   }
@@ -350,15 +298,9 @@ section.testimoni {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 984px) {
   .testimoni-page {
     min-height: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .testimoni-page {
-    height: 100vh;
   }
 }
 
@@ -391,20 +333,6 @@ section.testimoni {
   padding: 2rem;
   margin: 2rem;
   display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .card-article {
-    width: 100%;
-    margin: 1rem 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .card-article {
-    width: 300px;
-    margin: 2rem;
-  }
 }
 
 .card-data {
@@ -444,20 +372,6 @@ section.testimoni {
   gap: 5rem;
 }
 
-@media screen and (max-width: 768px) {
-  .layanan {
-    min-height: auto;
-    overflow-x: auto;
-    padding: 2rem 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .layanan {
-    height: 100vh;
-  }
-}
-
 .Produkbox {
   flex-direction: column;
   align-items: center;
@@ -467,25 +381,6 @@ section.testimoni {
   background-color: #3063C2;
   filter: drop-shadow(10px 4px 30px rgba(0, 0, 0, 0.35));
   padding: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .Produkbox {
-    display: inline-block;
-    margin: 0 1rem;
-    width: 100%;
-  }
-
-  .Produkbox:first-child {
-    margin-left: 100rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .Produkbox {
-    display: flex;
-    width: 30rem;
-  }
 }
 
 .layanan-content {
@@ -550,23 +445,22 @@ section.testimoni {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #C6E0E9;
+  background-color: var(--first-color) ;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin: 5rem 0;
 }
 
 .testimoni-form h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 42px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
 .testimoni-form h2 {
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -574,19 +468,14 @@ section.testimoni {
 
 .testimoni-form-box {
   position: relative;
-  width: 100%;
   max-width: 700px;
   width: 700px;
   height: fit-content;
-  border: 3px solid black;
-  border-radius: 40px;
   padding: 30px 30px;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   margin: 0 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .input-box,
@@ -622,7 +511,7 @@ textarea {
 }
 
 label {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 12px;
 }
 
@@ -640,16 +529,16 @@ select {
 }
 
 .testimoni-form-box .submit-btn {
-  width: 100%;
+  width: 13vh;
   height: 45px;
-  background: #000;
+  background: white;
   border: none;
   outline: none;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   cursor: pointer;
   font-size: 16px;
-  color: #ffffff;
+  color:black;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -668,12 +557,6 @@ select {
   z-index: 1000;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (min-width: 768px) {
-  .wellcome-text {
-    width: 100vw;
-  }
 }
 
 .logo-container-footer {
@@ -724,11 +607,6 @@ select {
   font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-  .wellcome-text {
-    margin-right: 7rem;
-  }
-}
 
 .sosmed-footer a {
   font-size: 2rem;
@@ -759,20 +637,102 @@ select {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 985px) {
+  .navbar-links {
+    display: block;
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .layanan {
+    height: 100vh;
+  }
+  .testimoni-page {
+    height: 100vh;
+  }
+  .card-article {
+    width: 300px;
+    margin: 2rem;
+  }
+  .Produkbox {
+    display: flex;
+    width: 30rem;
+  }
+  .wellcome-text {
+    width: 100vw;
+  }
+  .wellcome-text {
+    margin-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+
+  .about-us {
+    min-height: auto;
+  }
+
+  .card-article {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .Produkbox {
+    display: inline-block;
+    margin: 0 1rem;
+    width: 100%;
+  }
+
+  .Produkbox:first-child {
+    margin-left: 100rem;
+  }
+
+  .layanan {
+    min-height: auto;
+    overflow-x: auto;
+    padding: 2rem 0;
+  }
+
   .testimoni-form {
     height: auto;
-    margin: 2rem 0;
+    margin: 5rem 0;
   }
   .testimoni-form-box {
     width: 90%;
-    padding: 20%;
+    padding: 10%;
   }
   .input-box
   .pilih-paket {
     margin: 10px 0;
   }
-
+  .wellcome-text {
+    height: auto;
+    margin-top: 8rem;
+    width: 100%;
+  }
+  .testimoni-form-box .submit-btn {
+    width: 100%;
+  }
 
   .footer {
       padding: 2rem 0;
@@ -797,5 +757,11 @@ select {
   .sosmed-footer {
       margin: 1rem 0;
       text-align: center;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .book-button {
+    display: none;
   }
 }

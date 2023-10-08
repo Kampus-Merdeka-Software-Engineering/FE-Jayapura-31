@@ -65,13 +65,13 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 984px) {
   .header {
     padding: 2rem 5%;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 985px) {
   .navbar-links {
     display: block;
   }
@@ -85,7 +85,7 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 984px) {
   .navbar-links {
     display: none;
   }
@@ -371,7 +371,7 @@ html {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 984px) {
   .card {
       flex-basis: 100%;
   }
@@ -401,5 +401,11 @@ html {
   .sosmed-footer {
       margin: 1rem 0;
       text-align: center;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .book-button {
+    display: none;
   }
 }

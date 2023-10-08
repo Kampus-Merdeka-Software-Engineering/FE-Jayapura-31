@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Pendaftaran</title>
     <link rel="stylesheet" href="Pages/css/booking-page.css" />
   </head>
@@ -63,7 +63,7 @@
               id="phone"
               name="phone"
               required="required"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
               placeholder="Nomor WhatsApp"
             />
           </div>
@@ -85,7 +85,7 @@
             />
           </div>
           <div class="pilih-paket">
-            <label for="paket-konseling">Pilih layanan</label>
+            <label for="paket-konseling">Pilih Layanan</label>
             <select
               title="paket-konseling"
               id="paket-konseling"
@@ -100,7 +100,7 @@
               <option value="anxiety">Anxiety</option>
             </select>
           </div>
-          <button type="submit" class="submit-btn">submit</button>
+          <button type="submit" class="submit-btn" onclick="openPopup()">Kirim</button>
         </div>
         <h2>Sesi konseling kami tersedia mulai pukul 09.00 hingga 20.00 WIB</h2>
       </form>

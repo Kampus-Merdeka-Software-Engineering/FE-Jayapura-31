@@ -66,44 +66,6 @@ html {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 2rem 5%;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .navbar-links {
-    display: block;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
-  .mobile-menu.active {
-    display: flex;
-  }
-}
-
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -210,20 +172,21 @@ html {
 
 .main {
   background-color: #ffffff;
-  padding: 2rem;
   margin-bottom: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .layanan {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 100px;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* 2 columns with equal width */
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  gap: 4rem;
+  margin: 5rem 0;
 }
 
 
@@ -379,7 +342,39 @@ html {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 985px) {
+  .navbar-links {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
   .footer {
       padding: 2rem 0;
       flex-direction: column;
@@ -403,5 +398,11 @@ html {
   .sosmed-footer {
       margin: 1rem 0;
       text-align: center;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .book-button {
+    display: none;
   }
 }

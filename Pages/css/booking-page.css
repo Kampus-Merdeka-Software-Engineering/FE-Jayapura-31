@@ -46,13 +46,13 @@ html {
   background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 984px) {
   .header {
     padding: 2rem 5%;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 985px) {
   .navbar-links {
     display: block;
   }
@@ -66,7 +66,7 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 984px) {
   .navbar-links {
     display: none;
   }
@@ -353,7 +353,29 @@ select {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 984px) {
+  .booking-menu-box{
+    width: 100%;
+    padding: 20px;
+  }
+  .booking-menu-box h1 {
+    font-size: 1.8rem;
+  }
+  .booking-menu-box h2{
+    font-size: 1.2rem;
+  }
+  .input-box {
+    margin: 15px 0;
+  }
+
+  .input-box input {
+    font-size: 1rem;
+  }
+
+  .booking-menu-box .submit-btn {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
   .footer {
       padding: 2rem 0;
       flex-direction: column;
@@ -377,5 +399,11 @@ select {
   .sosmed-footer {
       margin: 1rem 0;
       text-align: center;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .book-button {
+    display: none;
   }
 }
