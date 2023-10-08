@@ -191,12 +191,10 @@ html {
 
 .wellcome-text {
   display: flex;
-  margin-top: 0;
   text-align: center;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(/image/background\ homepage\ 1.jpg);
-  height: 100%;
   background-position: center;
   background-size: cover;
 }
@@ -265,8 +263,8 @@ html {
 
 .about-us {
   background-color: #fff;
-  padding: 2rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(/image/HomepageBackground-image-2.jpg);
+  padding: 2rem 0 4rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.7)), url(/image/HomepageBG6.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -306,36 +304,30 @@ html {
 
 .about-us h2 {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: white;
   padding: 20px;
 }
 
 .about-us p {
-  font-family: 'Martian Mono', monospace;
-  font-size: 20;
+  font-family: 'Poppins', sans-serif;
   color: white;
   max-width: 650px;
-  font-weight: 700;
+  font-weight: 400;
   margin: 10px 0px 40px 0px;
   padding: 20px;
-  outline: double 10px #ffffff;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .welcome-to-talkspace {
-  font-size: 1.6rem;
-  color: #333;
+  font-size: 1.9rem;
   line-height: 1.5;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 
 .sosmed-main a {
   font-size: 3rem;
   color: #fff;
-  padding: 3rem;
+  padding: 1rem;
+  margin: 10px 0 40px 0;
 }
 
 .sosmed-main a:hover {
