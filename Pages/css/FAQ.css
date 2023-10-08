@@ -203,8 +203,8 @@ html {
 
 .faq-container {
   width: 100%;
-  height: 100vh;
-  margin-top: 5rem;
+  min-height: 100vh;
+  margin: 5rem 0;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -214,7 +214,7 @@ html {
   font-family: Inter;
   padding: 1rem;
   text-align: center;
-
+  margin-bottom: 20px;
 }
 
 .faq {
@@ -261,15 +261,14 @@ html {
   background-color: var(--first-color);
   padding: 2rem;
   width: 100vw;
-  height: 10rem;
   z-index: 1000;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
 }
 
 .logo-container-footer {
   margin-left: 7rem;
-  ;
 }
 
 .logo-container-footer h1 {
@@ -318,7 +317,7 @@ html {
 }
 
 .sosmed-footer {
-  margin-right: 7rem;
+
 }
 
 .sosmed-footer a {
@@ -326,6 +325,7 @@ html {
   color: #fff;
   padding: 1rem;
   animation: fadeInLeft 1s ease-in-out;
+  display: inline-block;
 }
 
 .sosmed-footer a:hover {
@@ -350,6 +350,14 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  .faq-container {
+    padding-bottom: 10rem;
+  }
+  .faq {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .footer {
       padding: 2rem 0;
       flex-direction: column;
