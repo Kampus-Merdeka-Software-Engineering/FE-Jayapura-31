@@ -195,7 +195,8 @@ html {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-image: url(/image/Background-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(/image/background\ homepage\ 1.jpg);
+  height: 100%;
   background-position: center;
   background-size: cover;
 }
@@ -265,7 +266,7 @@ html {
 .about-us {
   background-color: #fff;
   padding: 2rem;
-  background-image: url(/image/background-image-2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(/image/HomepageBackground-image-2.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -297,7 +298,7 @@ html {
 .about-us h1 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 50px;
-  color: #000000ce;
+  color: white;
   text-align: center;
   text-decoration: underline;
   text-decoration-color: var(--second-color);
