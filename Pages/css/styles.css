@@ -156,7 +156,7 @@ html {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8),rgba(0,0,0,0.5)), url(/image/background\ homepage\ 1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(/image/background\ homepage\ 1.jpg);
   background-position: center;
   background-size: cover;
   height: auto;
