@@ -159,13 +159,11 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url(/image/background\ homepage\ 1.jpg);
   background-position: center;
   background-size: cover;
+  height: auto;
+  margin-top: 8rem;
+  width: 100%;
 }
 
-@media screen and (min-width: 985px) {
-  .wellcome-text {
-    height: 100vh;
-  }
-}
 
 .wellcome-text-box {
   position: relative;
@@ -763,5 +761,11 @@ select {
 @media screen and (max-width: 437px) {
   .book-button {
     display: none;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .wellcome-text {
+    height: 90vh;
   }
 }
