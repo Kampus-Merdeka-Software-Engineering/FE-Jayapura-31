@@ -46,6 +46,7 @@ html {
   background: var(--first-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 @media screen and (max-width: 984px) {
   .header {
     padding: 2rem 5%;
@@ -171,7 +172,7 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
 }
 
 .booking-menu-box h1 {
@@ -261,14 +262,16 @@ select {
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   display: flex;
   background-color: var(--first-color);
   padding: 2rem;
   width: 100vw;
+  height: 10rem;
   z-index: 1000;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  bottom: 0;
 }
 
 .logo-container-footer {
@@ -351,16 +354,19 @@ select {
 }
 
 @media screen and (max-width: 984px) {
-  .booking-menu-box{
+  .booking-menu-box {
     width: 100%;
     padding: 20px;
   }
+
   .booking-menu-box h1 {
     font-size: 1.8rem;
   }
-  .booking-menu-box h2{
+
+  .booking-menu-box h2 {
     font-size: 1.2rem;
   }
+
   .input-box {
     margin: 15px 0;
   }
@@ -373,29 +379,34 @@ select {
     font-size: 1rem;
     margin-top: 20px;
   }
+
   .footer {
-      padding: 2rem 0;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
   .footer-menu-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
   }
+
   .footer-menu {
-      margin: 1rem 0;
-      text-align: center;
+    margin: 1rem 0;
+    text-align: center;
   }
+
   .logo-container-footer {
-      margin: 1rem 0;
-      text-align: center;
+    margin: 1rem 0;
+    text-align: center;
   }
+
   .sosmed-footer {
-      margin: 1rem 0;
-      text-align: center;
+    margin: 1rem 0;
+    text-align: center;
   }
 }
 

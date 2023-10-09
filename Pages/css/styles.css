@@ -156,7 +156,7 @@ html {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(/image/background\ homepage\ 1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-31/image/background\ homepage\ 1.jpg);
   background-position: center;
   background-size: cover;
   height: auto;
@@ -216,7 +216,7 @@ html {
 .about-us {
   background-color: #fff;
   padding: 2rem 0 4rem 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.7)), url(/image/HomepageBG6.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-31/image/HomepageBG6.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -287,7 +287,7 @@ section.testimoni {
 }
 
 .testimoni-page {
-  background-image: url(/image/background-image-3.jpg);
+  background-image: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-31/image/background-image-3.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -363,7 +363,7 @@ section.testimoni {
 } */
 
 .layanan {
-  background-image: url(/image/background-image-3.jpg);
+  background-image: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-31/image/background-image-3-flipped.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,7 +373,6 @@ section.testimoni {
 .Produkbox {
   flex-direction: column;
   align-items: center;
-
   height: 50rem;
   border-radius: 30px;
   background-color: #3063C2;
@@ -425,7 +424,7 @@ section.testimoni {
   position: relative;
   padding-left: 20px;
   margin-bottom: 10px;
-  background-image: url('/image/cek.png');
+  background-image: url('https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-31/image/cek.png');
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 0 50%;
@@ -443,7 +442,7 @@ section.testimoni {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--first-color) ;
+  background-color: var(--first-color);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -468,11 +467,9 @@ section.testimoni {
   position: relative;
   max-width: 700px;
   width: 700px;
-  height: fit-content;
   padding: 30px 30px;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(5px);
   margin: 0 20px;
 }
 
@@ -536,7 +533,7 @@ select {
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   cursor: pointer;
   font-size: 16px;
-  color:black;
+  color: black;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -639,6 +636,7 @@ select {
   .navbar-links {
     display: block;
   }
+
   .menu-toggle {
     display: none;
   }
@@ -646,23 +644,29 @@ select {
   .mobile-menu {
     display: none;
   }
+
   .layanan {
     height: 100vh;
   }
+
   .testimoni-page {
     height: 100vh;
   }
+
   .card-article {
     width: 300px;
     margin: 2rem;
   }
+
   .Produkbox {
     display: flex;
     width: 30rem;
   }
+
   .wellcome-text {
     width: 100vw;
   }
+
   .wellcome-text {
     margin-right: 7rem;
   }
@@ -672,9 +676,11 @@ select {
   .header {
     padding: 2rem 5%;
   }
+
   .navbar-links {
     display: none;
   }
+
   .menu-toggle {
     display: flex;
   }
@@ -695,6 +701,7 @@ select {
     width: 100%;
     margin: 1rem 0;
   }
+
   .Produkbox {
     display: inline-block;
     margin: 0 1rem;
@@ -715,47 +722,54 @@ select {
     height: auto;
     margin: 5rem 0;
   }
+
   .testimoni-form-box {
     width: 90%;
     padding: 10%;
   }
-  .input-box
-  .pilih-paket {
+
+  .input-box .pilih-paket {
     margin: 10px 0;
   }
+
   .wellcome-text {
     height: auto;
     margin-top: 8rem;
     width: 100%;
   }
+
   .testimoni-form-box .submit-btn {
     width: 100%;
   }
 
   .footer {
-      padding: 2rem 0;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      box-shadow: none;
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
   }
+
   .footer-menu-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
   }
+
   .footer-menu {
-      margin: 1rem 0;
-      text-align: center;
+    margin: 1rem 0;
+    text-align: center;
   }
+
   .logo-container-footer {
-      margin: 1rem 0;
-      text-align: center;
+    margin: 1rem 0;
+    text-align: center;
   }
+
   .sosmed-footer {
-      margin: 1rem 0;
-      text-align: center;
+    margin: 1rem 0;
+    text-align: center;
   }
 }
 
