@@ -324,8 +324,9 @@ section.testimoni {
 .card-article {
   width: 300px;
   border-radius: 1.25rem;
-  background: linear-gradient(145deg, #93ddff, #7bbad8);
-  box-shadow: 8px 8px 21px #6091a8, -8px -8px 21px #b2ffff;
+  border-radius: 27px;
+  background: linear-gradient(145deg, #9decff, #84c7e6);
+  box-shadow: 5px 5px 0px #76b1cc, -5px -5px 0px #b0ffff;
   flex-direction: column;
   overflow: hidden;
   padding: 2rem;
