@@ -45,71 +45,36 @@
       <form id="bookingForm" action="https://be-jayapura-31-production-8509.up.railway.app/api/konseling" method="post">
         <div class="text-field">
           <div class="input-box">
-            <label for="username">Nama Lengkap</label>
-            <input
-              type="text"
-              required="required"
-              placeholder="Nama Lengkap"
-              pattern="[a-zA-Z ]+"
-            />
+            <label for="nama_lengkap">Nama Lengkap</label>
+            <input type="text" name="nama_lengkap" required="required" placeholder="Nama Lengkap" pattern="[a-zA-Z ]+" />
           </div>
           <div class="input-box">
             <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              required="required"
-              id="email"
-              placeholder="Email"
-            />
+            <input type="email" name="email" required="required" id="email" placeholder="Email" />
           </div>
           <div class="input-box">
-            <label for="phone">Nomor WhatsApp (0812********)</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required="required"
-              pattern="[0-9]{10,12}"
-              placeholder="Nomor WhatsApp"
-            />
+            <label for="nomor_whatsapp">Nomor WhatsApp (0812********)</label>
+            <input type="tel" id="nomor_whatsapp" name="nomor_whatsapp" required="required" pattern="[0-9]{10,12}" placeholder="Nomor WhatsApp" />
           </div>
           <div class="input-box">
-            <label for="Usia">Usia</label>
-            <input
-              type="number"
-              required="required"
-              placeholder="Usia"
-              min="0"
-            />
+            <label for="usia">Usia</label>
+            <input type="number" name="usia" required="required" placeholder="Usia" min="0" />
           </div>
           <div class="input-box">
-            <label for="tanggal-konseling">Tanggal Konseling</label>
-            <input
-              type="date"
-              required="required"
-              placeholder="tanggal lahir"
-            />
+            <label for="tanggal_konseling">Tanggal Konseling</label>
+            <input type="date" name="tanggal_konseling" required="required" placeholder="Tanggal Konseling" />
           </div>
           <div class="pilih-paket">
-            <label for="paket-konseling">Pilih Layanan</label>
-            <select
-              title="paket-konseling"
-              id="paket-konseling"
-              name="paket-konseling"
-            >
-              <option value="--Pilih layanan--" selected="selected" disabled>
-                --Pilih layanan--
-              </option>
-              <option value="individual">Individual</option>
-              <option value="family">Family</option>
-              <option value="depression">Depression</option>
-              <option value="anxiety">Anxiety</option>
+            <label for="layanan">Pilih Layanan</label>
+            <select title="layanan" name="layanan">
+              <option value="--Pilih layanan--" selected="selected" disabled>--Pilih layanan--</option>
+              <option value="Individual">Individual</option>
+              <option value="Family">Family</option>
+              <option value="Depression">Depression</option>
+              <option value="Anxiety">Anxiety</option>
             </select>
           </div>
-          <button type="submit" class="submit-btn" onclick="openPopup()">
-            Kirim
-          </button>
+          <button type="submit" class="submit-btn" onclick="openPopup()">Kirim</button>
         </div>
         <h2>Sesi konseling kami tersedia mulai pukul 09.00 hingga 20.00 WIB</h2>
       </form>
