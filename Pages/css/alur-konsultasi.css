@@ -204,6 +204,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .container-content h1 {
@@ -221,7 +222,7 @@ html {
 }
 
 .content img {
-  width: 300px;
+  width: 200px;
 }
 
 .alur-1,
@@ -230,8 +231,8 @@ html {
 .alur-4 {
   display: flex;
   max-width: 850px;
-  /* max-width: 400px; */
   padding: 2rem;
+  align-items: center;
 }
 
 .content h2 {
