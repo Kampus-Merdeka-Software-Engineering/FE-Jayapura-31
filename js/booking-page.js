@@ -17,10 +17,11 @@ document.getElementById("bookingForm").addEventListener("submit", function (even
     event.preventDefault();
 
     const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData)
 
     fetch(event.target.action, {
       method: "POST",
-      body: formData,
+      body: JSON.stringify(data),
     })
       .then((response) => {
         if (response.ok) {
