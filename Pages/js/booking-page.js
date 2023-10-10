@@ -13,21 +13,6 @@ if (selectedOption) {
   selectElement.value = selectedOption;
   }
 
-document
-  .getElementById("bookingForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); 
-    alert(
-      "Data telah berhasil terkirim untuk lebih lanjut anda akan dihubungi melalui Email. Terima kasih telah mendaftar!"
-    );
-  });
-
-const form = document.getElementById('bookingForm');
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-      window.location.href = '/summary.html'
-      });
-
 document.getElementById("bookingForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -39,7 +24,8 @@ document.getElementById("bookingForm").addEventListener("submit", function (even
     })
       .then((response) => {
         if (response.ok) {
-          alert("Form submitted successfully!");
+          alert("Data telah berhasil terkirim untuk lebih lanjut anda akan dihubungi melalui Email. Terima kasih telah mendaftar!");
+          window.location.href = '/summary.html'
         } else {
           alert("Error submitting the form. Please try again later.");
         }
@@ -48,4 +34,20 @@ document.getElementById("bookingForm").addEventListener("submit", function (even
         console.error("Network error:", error);
         alert("Network error occurred. Please check your internet connection.");
       });
+  });  
+
+/*document
+  .getElementById("bookingForm")
+  p.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+    alert(
+      "Data telah berhasil terkirim untuk lebih lanjut anda akan dihubungi melalui Email. Terima kasih telah mendaftar!"
+    );
   });
+
+const form = document.getElementById('bookingForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+      window.location.href = '/summary.html'
+      });*/
+
