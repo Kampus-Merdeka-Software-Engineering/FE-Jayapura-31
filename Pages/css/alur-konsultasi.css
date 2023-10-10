@@ -212,11 +212,9 @@ html {
   font-size: 50px;
   color: rgb(0, 0, 0);
   text-align: center;
-  text-decoration: underline;
   text-decoration-color: var(--second-color);
   text-align: center;
-  text-decoration: underline;
-  margin-top: 150px;
+  margin: 150px 0 70px;
   display: flex;
   justify-content: center;
 }
@@ -302,8 +300,6 @@ html {
 .footer-menu li:first-child {
   font-weight: bold;
 }
-
-.sosmed-footer {}
 
 .sosmed-footer a {
   font-size: 2rem;
