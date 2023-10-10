@@ -128,7 +128,7 @@ html {
 }
 
 .navbar a:nth-child(1) {
-  color: var(--second-color);
+  color: var(--base-color);
 }
 
 .navbar a:hover {
